@@ -1,0 +1,47 @@
+header {
+  background-color: #2a2a2a; 
+  border-bottom: 3px solid #00ff9c; 
+  padding: 10px 0;
+  position: relative; 
+}
+
+/* 1. CORRECCIÓN */
+header .holder {
+  width: 100%;
+  /* Se eliminó 'margin: 0 auto' y 'max-width: 1200px' */
+  /* Ahora el holder ocupa el 100% y el padding da el espacio izquierdo */
+  display: flex;
+  align-items: center;
+  padding: 0 20px; /* Espacio desde el borde izquierdo */
+  box-sizing: border-box;
+}
+
+/* 2. Logo redondo */
+header .holder img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00ff9c;
+}
+
+/* 3. Título */
+header .holder h1 {
+  color: white;
+  font-size: 2em;
+  margin-left: 15px;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+/* 4. "Hola franco" */
+.usuario-info {
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 5px;
+}

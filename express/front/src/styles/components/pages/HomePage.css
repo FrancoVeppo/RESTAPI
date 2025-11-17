@@ -1,0 +1,75 @@
+/* --- Ajustes para el tema oscuro --- */
+
+.columnas {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Espacio entre las columnas */
+  margin-top: 30px;
+}
+
+.bienvenidos, .testimonios {
+  flex: 1; /* Para que ambas columnas ocupen el mismo espacio */
+  background-color: #2a2a2a; /* Fondo gris oscuro, como el panel de contacto */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bienvenidos h2, .testimonios h2 {
+  color: #00ff9c; /* Color neón para los títulos */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ff9c; /* Línea debajo del título */
+  padding-bottom: 10px;
+}
+
+.bienvenidos p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #f0f0f0; /* Color de texto claro */
+  margin-bottom: 15px;
+}
+
+/* --- Estilos específicos para los testimonios --- */
+.testimonio {
+  background-color: #333; /* Un gris un poco más oscuro para cada review */
+  border-left: 5px solid #00ff9c; /* Borde neón a la izquierda */
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-style: italic;
+  color: #e0e0e0; /* Texto claro */
+}
+
+.testimonio .cita {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.testimonio .autor {
+  display: block;
+  text-align: right;
+  font-size: 0.9em;
+  color: #bbb; /* Autor un poco más sutil */
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .columnas {
+    flex-direction: column;
+  }
+}
+
+/* --- Asegúrate de que tu `homeimg img` siga ajustándose --- */
+.homeimg img {
+  width: 100%;       
+  height: auto;      
+  display: block;    
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px; /* Bordes redondeados para la imagen principal */
+  margin-bottom: 20px;
+}

@@ -1,0 +1,128 @@
+/* --- Estilos para la página de Contacto --- */
+
+.contacto {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.contacto > div {
+  flex: 1; /* Ambas columnas ocupan el 50% */
+}
+
+/* --- Estilos del Formulario --- */
+
+.formulario p {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  width: 100%;
+  background-color: #333; /* Fondo de input oscuro */
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 12px;
+  color: #e0e0e0;
+  font-size: 1em;
+  box-sizing: border-box; /* Importante */
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus {
+  border-color: #00ff9c; /* Borde neón al seleccionar */
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 156, 0.2);
+}
+
+.formulario textarea {
+  min-height: 150px;
+  resize: vertical; /* Permite al usuario agrandar el área de texto */
+}
+
+.btn-enviar {
+  background-color: #00ff9c;
+  color: #1a1a1a;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #00e08a;
+}
+
+/* --- Estilos para Feedback (Éxito/Error) --- */
+.feedback-container {
+  min-height: 30px;
+  text-align: center;
+}
+.msg-sending {
+  color: #e0e0e0;
+  font-style: italic;
+}
+.msg-success {
+  color: #00ff9c;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.msg-error {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+/* --- Estilos para "Otras Vías" (Iconos) --- */
+
+.datos {
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.datos h2 {
+  color: #00ff9c;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  font-size: 1.1em;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.info-list li i {
+  width: 40px; /* Espacio para el icono */
+  font-size: 1.5em;
+  color: #00ff9c; /* Iconos en color neón */
+  text-align: center;
+  margin-right: 15px;
+}
+
+/* Para pantallas chicas, una columna */
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column;
+  }
+}

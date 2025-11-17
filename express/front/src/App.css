@@ -1,0 +1,41 @@
+/* --- TEMA GAMER OSCURO UNIFICADO --- */
+
+body {
+  background-color: #1a1a1a; /* Fondo "negro claro" (gris oscuro) */
+  color: #e0e0e0; /* Texto claro */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0d0d0d; /* Header negro (para contraste) */
+  border-bottom: 3px solid #00ff9c; /* Acento verde neón */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  color: white;
+}
+
+nav {
+  background-color: #222; /* Barra de navegación "negro claro" (gris) */
+}
+
+nav ul li a {
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* Pestaña activa (Home en tu primera foto) */
+nav ul li a.activo {
+  background-color: #00ff9c; /* Acento verde neón */
+  color: #0d0d0d; /* Texto oscuro sobre fondo neón */
+}
+
+footer {
+  background-color: #0d0d0d; /* Footer negro */
+  color: #888;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  text-align: center;
+}

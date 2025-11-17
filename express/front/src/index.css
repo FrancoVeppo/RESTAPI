@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  /* Quitamos el 'font-family' de aquí, 
+    porque ya lo definimos en 'App.css' 
+  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ASEGÚRATE DE QUE NO HAYA NINGUNA LÍNEA 
+    'text-align: justify;' AQUÍ
+  */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
